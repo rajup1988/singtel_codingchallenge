@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="32.495473">
+<testcase classname="Verify ToDo Functionality" name="Create ToDoList" time="20.724173">
+<system-out><![CDATA[Given user opens the url....................................................passed
+Then user creates the todo list.............................................passed
+And verify the todo list count "4"..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify ToDo Functionality" name="Verify ToDoList Active Button" time="1.910806">
+<system-out><![CDATA[Then user selects the todo list item........................................passed
+And verify the todo list count "3"..........................................passed
+Then user clicks on the Active button.......................................passed
+And verify the todo list item...............................................passed
+And verify the todo list item not present...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify ToDo Functionality" name="Verify ToDoList All Button" time="0.495545">
+<system-out><![CDATA[Then user clicks on the All button..........................................passed
+And verify the todo list item...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify ToDo Functionality" name="Verify ToDoList Completed Button" time="0.3092">
+<system-out><![CDATA[Then user clicks on the Completed button....................................passed
+And verify the todo list item...............................................passed
+And verify the todo list item not present...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify ToDo Functionality" name="Verify ToDoList Clear Completed Button" time="0.912111">
+<system-out><![CDATA[Then user clicks on the Clear Completed button..............................passed
+Then user clicks on the All button..........................................passed
+And verify the todo list item...............................................passed
+Then user clicks on the Completed button....................................passed
+And verify the todo list item not present...................................passed
+Then user clicks on the Active button.......................................passed
+And verify the todo list item...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify ToDo Functionality" name="Verify ToDoList clear by using destroy" time="8.143638">
+<system-out><![CDATA[Then user removes the todo list item........................................passed
+Then user clicks on the All button..........................................passed
+And verify the todo list count "2"..........................................passed
+And verify the todo list item...............................................passed
+Then user clicks on the Completed button....................................passed
+And verify the todo list item not present...................................passed
+Then user clicks on the Active button.......................................passed
+And verify the todo list item...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
